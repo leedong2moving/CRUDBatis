@@ -1,14 +1,16 @@
-package com.spring.board;
+package com.mycom.myapp.board;
 
 import java.util.Date;
 
 public class BoardVO {
     private int seq;
+    private String photo;
     private String category;
     private String title;
     private String writer;
     private String content;
     private Date regdate;
+    private Date moddate;
     private int cnt;
 
     public int getSeq() {
@@ -17,6 +19,8 @@ public class BoardVO {
     public void setSeq(int seq) {
         this.seq = seq;
     }
+    public String getPhoto(){return photo; }
+    public void setPhoto(String photo){this.photo=photo;}
 
     public String getCategory() {
         return category;
@@ -59,4 +63,6 @@ public class BoardVO {
     public void setCnt(int cnt) {
         this.cnt = cnt;
     }
+    public Date getModdate(){return moddate;}
+    public void setModdate(Date moddate){this.moddate=moddate;}
 }

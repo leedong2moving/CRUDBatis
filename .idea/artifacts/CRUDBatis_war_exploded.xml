@@ -1,19 +1,15 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="CRUDBatis:war exploded">
-    <output-path>$PROJECT_DIR$/target/CRUDBatis</output-path>
-    <properties id="maven-jee-properties">
-      <options>
-        <exploded>true</exploded>
-        <module>CRUDBatis</module>
-        <packaging>war</packaging>
-      </options>
-    </properties>
+    <output-path>$PROJECT_DIR$/out/artifacts/CRUDBatis_war_exploded</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="CRUDBatis" />
+          <element id="dir-copy" path="$USER_HOME$/Downloads/apache-tomcat-9.0.70/apache-tomcat-9.0.70" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Spring-5.2.3.RELEASE" />
+          <element id="library" level="project" name="Spring MVC-5.2.3.RELEASE" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.20" />
           <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.6.1" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.2.3.RELEASE" />
@@ -24,9 +20,6 @@
           <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.6" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:2.0.6" />
         </element>
-      </element>
-      <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/CRUDBatis/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="CRUDBatis/web/Web" />
     </root>
